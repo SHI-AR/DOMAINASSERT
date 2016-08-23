@@ -1,0 +1,1 @@
+if(videoTimeTrackingCondition){(function(){function a(){var c=Object.keys(playerObjList)[0];var e=MHP1138.player.isPlaying(c);if(e){var d=MHP1138.getCurrentTime(c);var b=videoTimeTracking+"/"+d;$j.ajax({url:b,method:"POST"})}}a();setInterval(a,5000)})()}if(playlistViewCountCondition){$j.ajax({url:playlistViewCountIncrement})};
